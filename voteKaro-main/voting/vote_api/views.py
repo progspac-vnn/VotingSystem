@@ -10,7 +10,7 @@ from voting.utils.encryption import decrypt_data
 from django.shortcuts import get_object_or_404
 from api.serializer import CandidateSerializer
 
-#celery:
+
 class CandidateViewSet(viewsets.ViewSet):
     @action(detail=True, methods=['post'])
     def vote(self, request, pk=None):
